@@ -1,0 +1,23 @@
+#Workflow
+#Should Have Name
+
+#Jobs 
+#Should be inside the workflow
+
+#steps
+#Should be inside the jobs
+
+#actions
+#Should be inside the steps
+name: Hello
+on: 
+  push:
+jobs:
+  say-hello:
+     runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello to everyone
+        steps:
+        -name: s
+
