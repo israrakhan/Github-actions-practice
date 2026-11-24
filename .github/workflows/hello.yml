@@ -11,13 +11,12 @@
 #Should be inside the steps
 name: Hello
 on: 
-  push:
+  workflow_dispatch:
+  
 jobs:
   say-hello:
      runs-on: ubuntu-latest
-
-    steps:
-      - name: Say hello to everyone
-        steps:
-        -name: s
+     steps:
+        - name: Say hello to everyone
+          run: echo "Hello Dosto"
 
