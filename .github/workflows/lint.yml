@@ -1,1 +1,20 @@
 #what is lint:- Checks syntax , code spelling , indentations etc
+# Goal : whenever someone changes the code . the linter will check if the syntax , format, indentation m is correct or not
+
+name: Auto Linter
+on: 
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout/Clone the code
+        uses: actions/checkout@v7
+
+      - name: Install Linter
+        run: pip install ruff
+      
+        
+      
